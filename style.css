@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(230, 229, 231);
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 40%;
+  margin: 100px auto;
+}
+.twitt-container,
+.yout-container,
+.face-container {
+  width: 150px;
+  padding: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.box-circle-1,
+.box-circle-2,
+.box-circle-3 {
+  width: 100px;
+  margin: 5px auto;
+  height: 100px;
+  transition: 550ms all ease-in-out;
+}
+
+.box-circle-1 {
+  background-color: #00acee;
+}
+
+.box-circle-2 {
+  background-color: #ff0000;
+}
+
+.box-circle-3 {
+  background-color: #3b5998;
+}
+
+.twit,
+.yout,
+.face {
+  margin-top: 10px;
+  text-align: center;
+  transition: 550ms all ease-in-out;
+  opacity: 0;
+  font-size: 1.3rem;
+}
+
+.twit {
+  color: #00acee;
+}
+
+.yout {
+  color: #ff0000;
+}
+
+.face {
+  color: #3b5998;
+}
+
+.twitt-container:hover .box-circle-1 {
+  border-radius: 50%;
+  transform: rotate(360deg);
+  border: 2px #00acee solid;
+  background-color: white;
+  box-shadow: 2px 2px 3px grey;
+  position: relative;
+}
+
+.yout-container:hover .box-circle-2 {
+  border-radius: 50%;
+  transform: rotate(360deg);
+  border: 2px #ff0000 solid;
+  background-color: white;
+  box-shadow: 2px 2px 3px grey;
+  position: relative;
+}
+
+.face-container:hover .box-circle-3 {
+  border-radius: 50%;
+  transform: rotate(360deg);
+  border: 2px #3b5998 solid;
+  background-color: white;
+  box-shadow: 2px 2px 3px grey;
+  position: relative;
+}
+
+.twitt-container:hover .icon1 {
+  font-size: 3rem;
+  color: #00acee;
+  position: absolute;
+  transform: translate(25px, 15px);
+  text-shadow: 2px 2px 2px grey;
+  opacity: 1;
+}
+
+.yout-container:hover .icon2 {
+  font-size: 3rem;
+  color: #ff0000;
+  position: absolute;
+  transform: translate(24px, 14px);
+  text-shadow: 2px 2px 2px grey;
+  opacity: 1;
+}
+
+.face-container:hover .icon3 {
+  font-size: 3rem;
+  color: #3b5998;
+  position: absolute;
+  transform: translate(33px, 15px);
+  text-shadow: 2px 2px 2px grey;
+  opacity: 1;
+}
+
+.twitt-container:hover .twit {
+  text-shadow: 1px 1px 1px grey;
+  opacity: 1;
+}
+
+.yout-container:hover .yout {
+  text-shadow: 1px 1px 1px grey;
+  opacity: 1;
+}
+
+.face-container:hover .face {
+  text-shadow: 1px 1px 1px grey;
+  opacity: 1;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  transition: 550ms all ease-in-out;
+  opacity: 0;
+}
